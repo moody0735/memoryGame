@@ -1,20 +1,36 @@
+### Front End Web Developer
+
 # Memory Game Project
 
-## Table of Contents
+# Udacity
+### Front End Web Developer
+##### Memory Game
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+Game: https://github.com/moody0735/memoryGame
 
-## Instructions
+Matching Game! Click the cards to find a match. Match all 16 cards as fast and best as you can! <br/>
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+A fun game for users to play! Focuses on DOM manipulation, variables and object-oriented programming.
 
-To get started, open `js/app.js` and start building out the app's functionality
+It's a \#SPA \#SinglePageApp
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+* JS
+* CSS3
+* HTML5
 
-## Contributing
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+#### How To Run
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+* clone this repo or download and extract via zip
+* open the folder
+* right click `index.html` and choose a browser
+* play the game!
+
+
+
+![Memory Game](img/memory-game-logo.jpg)
+
+---
+
+# Moody Alhorayyis
+#### Web/Mobile Developer

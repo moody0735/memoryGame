@@ -7,6 +7,8 @@
  * Create a list that holds all of your cards
  */
 
+
+//array of the cards
 const icons= ["fa fa-diamond", "fa fa-diamond",
 "fa fa-paper-plane-o", "fa fa-paper-plane-o",
 "fa fa-anchor", "fa fa-anchor",
@@ -20,7 +22,7 @@ const cardsContainer= document.querySelector(".deck");
 let openCards=[];
 let matchedCards=[];
 
-
+//to start the game
 function start() { 
 	 let card_classes=shuffle(icons);
 for (let i=0; i<icons.length; i++) {
@@ -39,6 +41,8 @@ let interval;
 const timer=document.querySelector(".timer");
 timer.innerHTML="0 mins : 0 secs";
 let second=0, minute=0, hour=0;
+
+//to start the timer
 
 function startTimer() {
 	interval= setInterval(function(){
@@ -65,6 +69,8 @@ function resetTimer() {
 }
 
 
+
+//to open and show the cards
 let clicks=0;
 
 	function click(card) {
@@ -123,7 +129,7 @@ function compare(currentCard, previousCard) {
 
 
 
-
+//sweet alert from sweetalert2.com to popup modal
  function sweetAlert(reply, close) {
 const swalWithBootstrapButtons = Swal.mixin({
   customClass: {
@@ -169,7 +175,7 @@ swalWithBootstrapButtons.fire({
 
 	
 
-
+//the game over and popup shows
 
 function isOver() {
 	if (matchedCards.length===icons.length) {
@@ -194,6 +200,7 @@ movesContainer.innerHTML=0;
 
 
 
+//to add moves when 2 cards is opened
 function addMove() {
 	moves++;
 	movesContainer.innerHTML=moves;
@@ -205,6 +212,7 @@ const starsContainer=document.querySelector(".stars");
 let grade="Great!";
 
 
+//to shows star rating
 function rating() {
 	if (moves>=15) {
 		if (grade !== "Average") {
@@ -225,6 +233,8 @@ function rating() {
 	
 }
 
+
+//to restart button
 const restartBtn=document.querySelector(".restart");
 restartBtn.addEventListener("click", function() {
 	cardsContainer.innerHTML="";
